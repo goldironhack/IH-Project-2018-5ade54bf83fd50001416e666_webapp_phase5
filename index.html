@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="row justify-content-center">malusDomestica v0.49</div>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div id="map"></div>
+  </div>
+  <div class="col">
+    <table>
+      <tr>
+        <th>
+          Ratings
+        </th>
+      </tr>
+      <tr>
+        <th>Borough</th>
+        <th>Distance</th>
+        <th>Safety</th>
+        <th>Pricing</th>
+        <th>Air</th>
+      </tr>
+      <tbody id="tBody">
+
+      </tbody>
+    </table>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfvKfWwVo8eF8aons3akMI6Fdj0x2CVcw&callback=initMap"></script>
+  </body>
 </html>
